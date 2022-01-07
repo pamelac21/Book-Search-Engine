@@ -1,17 +1,16 @@
 // see SignupForm.js for comments
-import React, { useState } from "react";
-import { Form, Button, Alert } from "react-bootstrap";
+import React, { useState } from 'react';
 import { useMutation } from "@apollo/react-hooks";
+import { Form, Button, Alert } from 'react-bootstrap';
 
-import { LOGIN_USER } from "../utils/mutations";
-import Auth from "../utils/auth";
+import { LOGIN_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
 
 const LoginForm = () => {
-  const [userFormData, setUserFormData] = useState({ email: "", password: "" });
+  const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [login, { error }] = useMutation(LOGIN_USER);
-
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -29,9 +28,10 @@ const LoginForm = () => {
     }
 
     try {
-      const { data } = await login({
-        variables: { ...userFormData },
+      const {data} = await login({
+        variables: { ...userFormData }
       });
+
       Auth.login(data.login.token);
     } catch (err) {
       console.error(err);
@@ -39,9 +39,9 @@ const LoginForm = () => {
     }
 
     setUserFormData({
-      username: "",
-      email: "",
-      password: "",
+      username: '',
+      email: '',
+      password: '',
     });
   };
 
@@ -93,7 +93,6 @@ const LoginForm = () => {
           Submit
         </Button>
       </Form>
-      {error && <div>Login failed</div>}
     </>
   );
 };
