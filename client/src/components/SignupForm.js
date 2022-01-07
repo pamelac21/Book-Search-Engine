@@ -40,7 +40,7 @@ const SignupForm = () => {
       });
       Auth.login(data.addUser.token);
     } catch (err) {
-      console.error(error);
+      console.error(err);
       setShowAlert(true);
     }
 
@@ -123,6 +123,7 @@ const SignupForm = () => {
           Submit
         </Button>
       </Form>
+      {error && <div>Signup failed</div>}
     </>
   );
 };
