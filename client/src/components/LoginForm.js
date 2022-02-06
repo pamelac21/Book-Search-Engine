@@ -48,6 +48,7 @@ const LoginForm = () => {
   return (
     <>
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+      {error ? (
         <Alert
           dismissible
           onClose={() => setShowAlert(false)}
@@ -56,11 +57,7 @@ const LoginForm = () => {
         >
           Something went wrong with your login credentials!
         </Alert>
-        {error ? (
-          <div>
-            <p className="error-text">The provided credentials are incorrect</p>
-          </div>
-        ) : null}
+                ) : null}
         <Form.Group>
           <Form.Label htmlFor="email">Email</Form.Label>
           <Form.Control
