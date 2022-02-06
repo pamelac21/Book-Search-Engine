@@ -56,6 +56,11 @@ const LoginForm = () => {
         >
           Something went wrong with your login credentials!
         </Alert>
+        {error ? (
+          <div>
+            <p className="error-text">The provided credentials are incorrect</p>
+          </div>
+        ) : null}
         <Form.Group>
           <Form.Label htmlFor="email">Email</Form.Label>
           <Form.Control
