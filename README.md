@@ -55,7 +55,13 @@ In this application users can create an account and save their favorite books or
    npm run develop
    ```
    
-   
+## Usage
+- Application allows users to search books with keywords.
+- Users are able to create an account when providing user name, email and password.
+- Logged in users will are able to save their favorite books as well as delete them.
+- Saved books are stored in their account, so next time they login, the books are still in their account to be viewed. 
+
+
 ## Contact
    
 [Pamela](https://github.com/pamelac21)[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
