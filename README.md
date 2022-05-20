@@ -54,4 +54,9 @@ In this application users can create an account and save their favorite books or
 ## Acknowledgments
    
 * [Google Books API](https://developers.google.com/books)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
    
