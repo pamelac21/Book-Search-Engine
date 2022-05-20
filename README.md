@@ -21,7 +21,7 @@ In this application users can create an account and save their favorite books or
 ## Deployed Site
 [Link to deployed application](https://limitless-sea-64444.herokuapp.com/)
 
-![ss-book-search](https://user-images.githubusercontent.com/87335354/148472925-348c1743-8032-444c-8127-7903a379f657.png)
+<img src="https://user-images.githubusercontent.com/87335354/169610853-93f45cd1-3b37-4d58-9ef5-e3292a5d91ee.jpg" height="700">
 
 
 
